@@ -17,7 +17,7 @@ const initialPortfolioData = {
     title: "Sr. QA Engineer & Quality Process Architect",
     tagline: "Bridging technical quality assurance, telecom infrastructure, and data-driven process optimization.",
     bio: "Results-driven QA Engineer with 6+ years leading QA/QC oversight, inspection, and process improvement across manufacturing, telecom, and large-scale construction environments. Skilled in RFI lifecycle management, CAPA/root-cause analysis, MRB leadership, and document control using SAP/MES, Procore, and Primavera P6.",
-    location: "Denton, TX / Remote",
+    location: "Jacksonville, FL",
     email: "thota.manish02@gmail.com",
     phone: "+1 (940) 758-2447",
     linkedin: "https://www.linkedin.com/in/manish-thota-b41339189/",
@@ -47,7 +47,7 @@ const initialPortfolioData = {
       approach: "Enforced standardized multi-trade quality checkpoints, coordinated cross-functional responses across Production, Quality, and Engineering teams, and maintained audit-ready non-conformance tracking.",
       technologies: ["Procore", "Primavera P6", "SAP/MES", "CAPA", "HVAC Verification", "RFI Lifecycle"],
       result: "Achieved a 30% reduction in rework across piping systems, boosted project execution efficiency by 25%, and improved environmental control energy efficiency by 20%.",
-      businessImpact: "Mitigated high-risk non-conformances prior to commissioning, keeping project delivery on schedule and under strict budget compliance.",
+      businessImpact: "Mitigated high-risk non-conformances before commissioning, keeping project delivery on schedule and under strict budget compliance.",
       order: 1
     },
     {
