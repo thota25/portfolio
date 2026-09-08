@@ -10,11 +10,8 @@ import {
 export default function PortfolioApp() {
   const { scrollYProgress } = useScroll();
   
-  // Parallax translation and opacity mapping for background photo
+  // Parallax translation mapping for background photo
   const yBg = useTransform(scrollYProgress, [0, 1], ['0%', '25%']);
-  const bgOpacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.35, 0.25, 0.15]);
-
-  const [activeTab, setActiveTab] = useState('all');
 
   const metrics = [
     { label: "QA/QC Experience", value: "6+ Yrs", change: "Verified Leadership", color: "from-emerald-400 to-teal-500" },
@@ -50,18 +47,18 @@ export default function PortfolioApp() {
   return (
     <div className="min-h-screen bg-zinc-950 text-slate-100 font-sans selection:bg-orange-500 selection:text-white relative overflow-hidden">
       
-      {/* PARALLAX BACKGROUND PHOTO */}
+      {/* PARALLAX BACKGROUND PHOTO WITH HIGH VISIBILITY */}
       <motion.div 
-        style={{ y: yBg, opacity: bgOpacity }} 
+        style={{ y: yBg }} 
         className="fixed inset-0 pointer-events-none z-0 overflow-hidden"
       >
         <img 
           src="/profile.jpg" 
           alt="Manish Thota Background" 
-          className="w-full h-full object-cover object-center filter brightness-90 contrast-120 saturate-110 scale-105" 
+          className="w-full h-full object-cover object-center filter brightness-100 contrast-105 opacity-60 scale-105" 
         />
-        {/* Samsung-style modern gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/90 to-zinc-950" />
+        {/* Subtle gradient overlay to keep text readable without obscuring the photo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/40 via-zinc-950/60 to-zinc-950/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.15),transparent_50%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(249,115,22,0.15),transparent_50%)]" />
       </motion.div>
